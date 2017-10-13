@@ -99,6 +99,7 @@ def add(loc1,loc2,out):
 for f in files:
    print('migrating: ' + f)
    migrate(f)
+   print('Done migrating: '+ f)
 
 #migrate("1000.2000")
 #migrate("2400.1000")
