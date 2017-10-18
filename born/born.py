@@ -15,7 +15,7 @@ for arg in sys.argv[1:]:
 
 def runMigration(param):
   cmd="RTM3D json=%s"%param
-  print cmd
+  print(cmd)
   return subprocess.call(cmd.split())
 
    
