@@ -4,7 +4,7 @@ cd $HOME
 BORNDIR=$([ -f born ])
 if ! test -e born
 then
-  sudo yum install git
+  sudo yum -y install git
   git clone https://github.com/cgund98/cluster-scripts
   cd cluster-scripts/
   ./make_born.sh $HOME
