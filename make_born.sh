@@ -15,4 +15,4 @@ if [ $# -q 0]
     cd $1/born/
 fi
 sh build_born_complete.sh
-sh get_data.sh /mnt/resource
+#sh get_data.sh /mnt/resource

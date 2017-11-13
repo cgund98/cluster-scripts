@@ -10,5 +10,15 @@ then
   ./make_born.sh $HOME
 fi
 
-cd /mnt/resource/send/
+cd /mnt/resource/
+if ! test -e data
+then
+  $HOME/cluster-scripts/prepare_data.sh
+fi
+cd data
+if ! test -e born.py
+then
+  cp $HOME/cluster-scripts/born/born.sh .
+  cp $HOME/cluster-scripts/born/born.py .
+fi
 tmux new -s born -d 'sh born.sh'
