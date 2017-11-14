@@ -15,7 +15,7 @@ if ! test -e data
 then
   $HOME/cluster-scripts/prepare_data.sh
 fi
-cd data
+cd Compress/data
 if ! test -e born.py
 then
   cp $HOME/cluster-scripts/born/born.sh .
