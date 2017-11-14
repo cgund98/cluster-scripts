@@ -5,3 +5,5 @@ cp $HOME/cluster-scripts/combine_data.sh /mnt/resource/
 cd /mnt/resource/
 ./extract_data.sh
 ./combine_data.sh
+mkdir Compress
+cp -r data Compress/
