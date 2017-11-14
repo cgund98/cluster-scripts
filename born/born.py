@@ -8,7 +8,7 @@ files = []
 for arg in sys.argv[1:]:
   print(arg)
   arr = arg.split('.')
-  filtered = ".".join((arr[2], arr[3]))
+  filtered = ".".join((arr[1], arr[2]))
   files.append(filtered)
 
 # Born Stuff
@@ -23,7 +23,7 @@ def createImageParamFile(location):
     filename="mig.%s.P"%location
     f=open(filename,"w")
     f.write("{\n")
-    f.write('"data": "data.big.%s.json",\n'%location)
+    f.write('"data": "data.%s.json",\n'%location)
     f.write('"image": "image.%s.json",\n'%location)
     f.write('"velocity": "vel.big.json",\n')
     f.write('"wavelet": "wavelet.json"\n')
